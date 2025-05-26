@@ -5,7 +5,7 @@ const port = process.env.PORT || 3000;
 
 function cpuWork() {
   let sum = 0;
-  for (let i = 0; i < 1e7; i++) {
+  for (let i = 0; i < 1e9; i++) {
     sum += Math.sqrt(i);
   }
   return sum;
