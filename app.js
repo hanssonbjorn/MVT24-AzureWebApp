@@ -15,7 +15,7 @@ const server = http.createServer((req, res) => {
   const result = cpuWork();
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/html');
-  res.end(`
+  res.end(
     <h1>CPU-belastningstest</h1>
     <p>Appen kördes korrekt och genererade CPU-arbete.</p>
     <p>Resultat av beräkning: ${result}</p>
